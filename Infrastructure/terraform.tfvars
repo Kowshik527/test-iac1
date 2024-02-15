@@ -1,4 +1,4 @@
-region = "us-east-2" #need
+region = "us-east-4" #need
 
 #VPC
 vpc_name       = "IAC-VPC" #need
