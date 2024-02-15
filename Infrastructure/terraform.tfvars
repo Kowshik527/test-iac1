@@ -1,23 +1,23 @@
-region = "${region}" #need
+region = "us-east-2" #need
 
 #VPC
-vpc_name       = "${vpc_name}" #need
-vpc_cidr_block = "${vpc_cidr_block}" #need
+vpc_name       = "IAC-VPC" #need
+vpc_cidr_block = "172.17.0.0/16" #need
 
 #Private Subnet
-private_subnet_name       = "${private_subnet_name}" #need
-private_subnet_cidr_block = "${private_subnet_cidr_block}" #need
-availability_zone_2       = "${availability_zone_2}" #need
+private_subnet_name       = "IAC-private-subnet" #need
+private_subnet_cidr_block = "172.17.20.0/24" #need
+availability_zone_2       = "us-east-2b" #need
 
 #Public subnet
-public_subnet_name  = "${public_subnet_name}" #need
-subnet_cidr_block   = "${subnet_cidr_block}" #need
-availability_zone_1 = "${availability_zone_1}" #need
+public_subnet_name  = "IAC-public-subnet" #need
+subnet_cidr_block   = "172.17.10.0/24" #need
+availability_zone_1 = "us-east-2a" #need
 
-igw_name           = "${igw_name}" #need
+igw_name           = "IAC-igw" #need
 gateway_route_cidr = "0.0.0.0/0"
 
-nat_name              = "${nat_name}" #need 
+nat_name              = "IAC-NAT" #need 
 nat_connectivity_type = "public"
 eip_domain            = "vpc"
 eip_name              = "IAC-EIP"
@@ -27,7 +27,7 @@ private_route_name = "IAC-Private-Route"
 
 sg_name = "IAC-SG" #ned
 #common
-# root_password = "${root_password}" #need
+# root_password = "GoldenImage@123" #need
 key_name = "windows_sap_application"
 # Private_ami   = "ami-0e85d8711447c8e98"
 
