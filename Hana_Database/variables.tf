@@ -1,7 +1,7 @@
 #Region
 variable "region" {
   type    = string
-  default = "${region}"
+  default = "us-east-2"
 }
 
 #EC2 - HDB
@@ -11,7 +11,7 @@ variable "Private_ami" {
 }
 variable "Private_instance_type_HDB" {
   type    = string
-  default = "${Private_instance_type_HDB}"
+  default = "r4.2xlarge"
 }
 variable "Private_instance_name_HDB" {
   type    = string
@@ -23,7 +23,7 @@ variable "key_name" {
 }
 variable "iam-role-ec2" {
   type    = string
-  default = "${iam_role_ec2}"
+  default = "Hana_IAM"
 }
 
 #RBS Volumes
