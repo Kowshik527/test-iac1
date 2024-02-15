@@ -11,7 +11,7 @@ variable "Private_ami" {
 }
 variable "Private_instance_type_HDB" {
   type    = string
-  default = "r4.2xlarge"
+  default = "r4.3xlarge"
 }
 variable "Private_instance_name_HDB" {
   type    = string
