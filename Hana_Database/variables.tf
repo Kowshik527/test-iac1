@@ -1,11 +1,7 @@
 #Region
 variable "region" {
   type    = string
-<<<<<<< HEAD
   default = "${region}"
-=======
-  default = "us-east-8"
->>>>>>> 970268a25131f7a24df05e366041755e7fe75f1e
 }
 
 #EC2 - HDB
@@ -15,11 +11,7 @@ variable "Private_ami" {
 }
 variable "Private_instance_type_HDB" {
   type    = string
-<<<<<<< HEAD
   default = "${Private_instance_type_HDB}"
-=======
-  default = "r4.3333"
->>>>>>> 970268a25131f7a24df05e366041755e7fe75f1e
 }
 variable "Private_instance_name_HDB" {
   type    = string
@@ -31,11 +23,7 @@ variable "key_name" {
 }
 variable "iam-role-ec2" {
   type    = string
-<<<<<<< HEAD
   default = "${iam_role_ec2}"
-=======
-  default = "iam.kow"
->>>>>>> 970268a25131f7a24df05e366041755e7fe75f1e
 }
 
 #RBS Volumes
