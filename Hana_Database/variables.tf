@@ -1,7 +1,7 @@
 #Region
 variable "region" {
   type    = string
-  default = "us-east-9"
+  default = "us-east-8"
 }
 
 #EC2 - HDB
