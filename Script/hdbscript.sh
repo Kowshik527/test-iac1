@@ -67,8 +67,13 @@ components="${components}"
 path=""
 ip="$(ip addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
 add_hosts="n"
+<<<<<<< HEAD
 sysID="${sysID}"
 instance_number=""
+=======
+sysID="HDB"
+instance_number="001"
+>>>>>>> 970268a25131f7a24df05e366041755e7fe75f1e
 work_group=""
 system_usage="2"
 volume_enc=""
