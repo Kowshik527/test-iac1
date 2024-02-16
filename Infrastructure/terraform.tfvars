@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 region = "${region}" #need
 
 #VPC
@@ -18,6 +19,28 @@ igw_name           = "${igw_name}" #need
 gateway_route_cidr = "0.0.0.0/0"
 
 nat_name              = "${nat_name}" #need 
+=======
+region = "" #need
+
+#VPC
+vpc_name       = "" #need
+vpc_cidr_block = "" #need
+
+#Private Subnet
+private_subnet_name       = "" #need
+private_subnet_cidr_block = "" #need
+availability_zone_2       = "" #need
+
+#Public subnet
+public_subnet_name  = "" #need
+subnet_cidr_block   = "" #need
+availability_zone_1 = "" #need
+
+igw_name           = "" #need
+gateway_route_cidr = "0.0.0.0/0"
+
+nat_name              = "" #need 
+>>>>>>> 75755ea32d568ad94f7dc6430740cbcd646ee8f7
 nat_connectivity_type = "public"
 eip_domain            = "vpc"
 eip_name              = "IAC-EIP"
@@ -27,7 +50,11 @@ private_route_name = "IAC-Private-Route"
 
 sg_name = "IAC-SG" #ned
 #common
+<<<<<<< HEAD
 # root_password = "${root_password}" #need
+=======
+# root_password = "" #need
+>>>>>>> 75755ea32d568ad94f7dc6430740cbcd646ee8f7
 key_name = "windows_sap_application"
 # Private_ami   = "ami-0e85d8711447c8e98"
 
