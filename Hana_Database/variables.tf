@@ -23,7 +23,7 @@ variable "key_name" {
 }
 variable "iam-role-ec2" {
   type    = string
-  default = "${iam_role_ec2}"
+  default = "Hana_IAM"
 }
 
 #RBS Volumes
