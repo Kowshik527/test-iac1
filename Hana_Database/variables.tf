@@ -29,7 +29,7 @@ variable "iam-role-ec2" {
 #RBS Volumes
 variable "rbs_v_size" {
   type    = string
-  default = "30"
+  default = "300"
 }
 variable "rbs_v_type" {
   type    = string
