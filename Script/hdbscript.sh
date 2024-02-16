@@ -89,7 +89,7 @@ user_group=""
 db_user_pass="Test@123"
 confirm_db_user_pass="Test@123"
 reboot="n"
-confirm_install="n"
+confirm_install="y"
 
 sudo ./hdblcm <<< "$action"$'\n'"$components"$'\n'"$path"$'\n'"$ip"$'\n'"$add_hosts"$'\n'"$sysID"$'\n'"$instance_number"$'\n'"$work_group"$'\n'"$system_usage"$'\n'"$volume_enc"$'\n'"$data_volumes"$'\n'"$log_volumes"$'\n'"$restrict_mem_allocation"$'\n'"$resource_limit"$'\n'"$host_pass"$'\n'"$confirm_host_pass"$'\n'"$admin_pass"$'\n'"$confirm_admin_pass"$'\n'"$admin_home_dir"$'\n'"$admin_login_shell"$'\n'"$admin_user_id"$'\n'"$user_group"$'\n'"$db_user_pass"$'\n'"$confirm_db_user_pass"$'\n'"$reboot"$'\n'"$confirm_install"
 
