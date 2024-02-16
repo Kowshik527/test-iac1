@@ -49,7 +49,7 @@ variable "ebs_v_type" {
 #Bastion user
 variable "bastion_username" {
   type    = string
-  default = "root"
+  default = "baston"
 }
 
 #Root 
