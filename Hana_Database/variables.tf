@@ -1,7 +1,7 @@
 #Region
 variable "region" {
   type    = string
-  default = "us-east-2"
+  default = "${region}"
 }
 
 #EC2 - HDB
@@ -11,11 +11,11 @@ variable "Private_ami" {
 }
 variable "Private_instance_type_HDB" {
   type    = string
-  default = "r4.3xlarge"
+  default = "${Private_instance_type_HDB}"
 }
 variable "Private_instance_name_HDB" {
   type    = string
-  default = "IAC-HDB-EC2"
+  default = "${Private_instance_name_HDB}"
 }
 variable "key_name" {
   type    = string
@@ -23,42 +23,42 @@ variable "key_name" {
 }
 variable "iam-role-ec2" {
   type    = string
-  default = "Hana_IAM"
+  default = "${iam_role_ec2}"
 }
 
 #RBS Volumes
 variable "rbs_v_size" {
   type    = string
-  default = "150"
+  default = "${rbs_v_size}"
 }
 variable "rbs_v_type" {
   type    = string
-  default = "gp2"
+  default = "${rbs_v_type}"
 }
 
 #EBS Volumes
 variable "ebs_v_size" {
   type    = string
-  default = "300"
+  default = "${ebs_v_size}"
 }
 variable "ebs_v_type" {
   type    = string
-  default = "gp3"
+  default = "${ebs_v_type}"
 }
 
 #Bastion user
 variable "bastion_username" {
   type    = string
-  default = "ubuntu"
+  default = "${bastion_username}"
 }
 
 #Root 
 variable "root_username" {
   type    = string
-  default = "root"
+  default = "${root_username}"
 }
 variable "root_password" {
   type    = string
-  default = "GoldenImage@123"
+  default = "${root_password}"
 }
 
