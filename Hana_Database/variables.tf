@@ -1,7 +1,7 @@
 #Region
 variable "region" {
   type    = string
-  default = "${region}"
+  default = "us-east-1"
 }
 
 #EC2 - HDB
@@ -11,11 +11,11 @@ variable "Private_ami" {
 }
 variable "Private_instance_type_HDB" {
   type    = string
-  default = "${Private_instance_type_HDB}"
+  default = "r3.large"
 }
 variable "Private_instance_name_HDB" {
   type    = string
-  default = "${Private_instance_name_HDB}"
+  default = "cccc"
 }
 variable "key_name" {
   type    = string
@@ -29,36 +29,36 @@ variable "iam-role-ec2" {
 #RBS Volumes
 variable "rbs_v_size" {
   type    = string
-  default = "${rbs_v_size}"
+  default = "30"
 }
 variable "rbs_v_type" {
   type    = string
-  default = "${rbs_v_type}"
+  default = "gp2"
 }
 
 #EBS Volumes
 variable "ebs_v_size" {
   type    = string
-  default = "${ebs_v_size}"
+  default = "300"
 }
 variable "ebs_v_type" {
   type    = string
-  default = "${ebs_v_type}"
+  default = "gp3"
 }
 
 #Bastion user
 variable "bastion_username" {
   type    = string
-  default = "${bastion_username}"
+  default = "baston"
 }
 
 #Root 
 variable "root_username" {
   type    = string
-  default = "${root_username}"
+  default = "root"
 }
 variable "root_password" {
   type    = string
-  default = "${root_password}"
+  default = "Test@123"
 }
 
