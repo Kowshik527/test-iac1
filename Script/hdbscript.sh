@@ -62,8 +62,8 @@ cd
 echo "Installation is started"
 cd ../hana/Hana_Database/DATA_UNITS/
 cd HDB_SERVER_LINUX_X86_64/
-action="undefined"
-components="2"
+action="2"
+components="3"
 path=""
 ip="$(ip addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
 add_hosts="n"
@@ -89,7 +89,7 @@ user_group=""
 db_user_pass="Test@123"
 confirm_db_user_pass="Test@123"
 reboot="n"
-confirm_install="y"
+confirm_install="n"
 
 sudo ./hdblcm <<< "$action"$'\n'"$components"$'\n'"$path"$'\n'"$ip"$'\n'"$add_hosts"$'\n'"$sysID"$'\n'"$instance_number"$'\n'"$work_group"$'\n'"$system_usage"$'\n'"$volume_enc"$'\n'"$data_volumes"$'\n'"$log_volumes"$'\n'"$restrict_mem_allocation"$'\n'"$resource_limit"$'\n'"$host_pass"$'\n'"$confirm_host_pass"$'\n'"$admin_pass"$'\n'"$confirm_admin_pass"$'\n'"$admin_home_dir"$'\n'"$admin_login_shell"$'\n'"$admin_user_id"$'\n'"$user_group"$'\n'"$db_user_pass"$'\n'"$confirm_db_user_pass"$'\n'"$reboot"$'\n'"$confirm_install"
 
