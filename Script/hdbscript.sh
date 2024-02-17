@@ -62,7 +62,7 @@ cd
 echo "Installation is started"
 cd ../hana/Hana_Database/DATA_UNITS/
 cd HDB_SERVER_LINUX_X86_64/
-action="${action}"
+action="${actions}"
 components="${components}"
 path=""
 ip="$(ip addr show eth0 | grep -oP '(?<=inet\s)\d+(\.\d+){3}')"
