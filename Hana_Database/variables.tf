@@ -1,7 +1,7 @@
 #Region
 variable "region" {
   type    = string
-  default = "us-east-1"
+  default = "us-east1"
 }
 
 #EC2 - HDB
@@ -11,11 +11,11 @@ variable "Private_ami" {
 }
 variable "Private_instance_type_HDB" {
   type    = string
-  default = "r3.large"
+  default = "HDB"
 }
 variable "Private_instance_name_HDB" {
   type    = string
-  default = "cccc"
+  default = "HDB"
 }
 variable "key_name" {
   type    = string
@@ -49,7 +49,7 @@ variable "ebs_v_type" {
 #Bastion user
 variable "bastion_username" {
   type    = string
-  default = "baston"
+  default = "root"
 }
 
 #Root 
@@ -59,6 +59,6 @@ variable "root_username" {
 }
 variable "root_password" {
   type    = string
-  default = "Test@123"
+  default = "root"
 }
 
